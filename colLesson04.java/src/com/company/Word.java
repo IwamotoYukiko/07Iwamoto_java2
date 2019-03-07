@@ -12,9 +12,8 @@ public class Word {
     }
 
 
-    public void println(int y){
-        System.out.println( y+1 +". 単語：" + word + "　意味：" + meaning);
-
+    public void println(){
+        System.out.println("単語：" + word + "　意味：" + meaning);
     }
 
 }

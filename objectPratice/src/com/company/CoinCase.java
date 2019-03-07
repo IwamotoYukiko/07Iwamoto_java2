@@ -11,42 +11,41 @@ public class CoinCase {
 
     public void AddCoins(int price, int count) {
         if (price == 500) {
-            fiveHandred += count;
+            this.fiveHandred += count;
         } else if (price == 100) {
-            handred += count;
+            this.handred += count;
         } else if (price == 50) {
-            fifty += count;
+            this.fifty += count;
         } else if (price == 10) {
-            ten += count;
+            this.ten += count;
         } else if (price == 5) {
-            five += count;
+            this.five += count;
         } else if (price == 1) {
-            one += count;
+            this.one += count;
         }
     }
 
 
-    public int GetCount(int price){
+    public int GetCount(int price) {
         if (price == 500) {
-            return fiveHandred;
+            return this.fiveHandred;
         } else if (price == 100) {
-            return handred;
+            return this.handred;
         } else if (price == 50) {
-            return fifty;
+            return this.fifty;
         } else if (price == 10) {
-            return ten;
+            return this.ten;
         } else if (price == 5) {
-            return five;
-        } else if (price == 1) {
-            return one;
+            return this.five;
         }
-            return 0;  //正常に終了
+            return this.one;
+        }
+
+
+
+        public int GetAmount(){
+            return fiveHandred * 500 + handred * 100 + fifty * 50
+                    + ten * 10 + five * 5 + one;
+        }
+
     }
-
-
-    public int GetAmount(){
-        return (fiveHandred * 500) + (handred * 100) + (fifty * 50)
-                + (ten * 10) + (five * 5) + one;
-    }
-
-}

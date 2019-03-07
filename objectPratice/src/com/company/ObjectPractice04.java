@@ -3,9 +3,9 @@ package com.company;
 public class ObjectPractice04 {
 
     public static void main(String[] args) {
-        com.company.Person person0 = new Person();
+        Person person = new Person("太朗","東京");
 
-        person0.getSelfIntroduction();
+        person.getSelfIntroduction();
 
     }
 
